@@ -1,0 +1,1 @@
+{"zipcode":"75500","available-area":"carry-in","cellphoneCompany":"IPhone","phone_model":"iphone_11_Pro","device-issue":"Short_Battery_Life","firstname":"Murtaza","lastname":"Iqbal","phone":"03343024970","email":"murtazaiqbal1994@gmail.com","appointment":"2023-01-19T14:03","store-location":"wefixpt@gmail.com"}
