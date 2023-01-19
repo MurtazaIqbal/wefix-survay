@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form id="regForm" method="post">
+    <!-- One "tab" for each step in the form: -->
+
+    <div class="tab-section">
+      <!-- zip code -->
+      <div class="tab">
+        <p class="para">
+          Where are you located?<br>
+          <span>We tailor your options based on where you are.</span>
+        </p>
+        <div class="inputFields">
+          <input type="number" placeholder="ZIP Code" name="zipcode">
+        </div>
+      </div>
+      <!-- Available carry in -->
+      <div class="tab">
+        <p class="para">
+          How do you want to get your cell phone fixed?<br>
+          <span>Here’s what’s available in your area:</span>
+        </p>
+
+        <div class="available">
+          <div class="avail carry">
+            <label for="carry-in">
+              <div class="img-box">
+                <img src="van.jpg" alt="">
+              </div>
+              <div class="con">
+                <h3>Carry in</h3>
+                <p>Most repairs done in 45 minutes or less. free diagnostics.</p>
+              </div>
+            </label>
+            <input type="radio" checked value="carry-in" name="available-area" id="carry-in">
+          </div>
+          <div class="avail mail">
+            <label for="mail-in-repair">
+              <div class="img-box">
+                <img src="mail-in.jpg" alt="">
+              </div>
+              <div class="con">
+                <h3>Available soon</h3>
+                <p>Most repairs done in 45 minutes or less. free diagnostics.</p>
+              </div>
+            </label>
+            <input type="radio" value="mail-in-repair" name="available-area" id="mail-in-repair">
+          </div>
+        </div>
+      </div>
+      <!-- Select Phone -->
+      <div class="tab">
+        <p class="para">
+          Tell us about your cell phone<br>
+          <span>What cell phone is it?</span>
+        </p>
+        <div class="inputFields">
+          <select name="cellphoneCompany" >
+            <option value="" selected>Select Phone</option>
+            <option value="IPhone">IPhone</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Other-Device">Other-Device</option>
+          </select>
+        </div>
+      </div>
+      <!-- Select Models -->
+      <div class="tab">
+        <!-- Select iPhone Model -->
+        <div class="iphone">
+          <p class="para">
+            What iPhone is it?<br>
+            <span>Select Your Phone Model?</span>
+          </p>
+
+          <div class="inputFields">
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_14_Pro_Max"  name="phone_model"   class="radiobtnshowhide" id="iphone_14_Pro_Max">
+              <label for="iphone_14_Pro_Max">iphone 14 Pro Max</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_14_pro"  name="phone_model"   class="radiobtnshowhide" id="iphone_14_pro">
+              <label for="iphone_14_pro">iphone 14 pro</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_14_Plus"  name="phone_model"   class="radiobtnshowhide" id="iphone_14_Plus">
+              <label for="iphone_14_Plus">iphone 14 Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_14"  name="phone_model"   class="radiobtnshowhide" id="iphone_14">
+              <label for="iphone_14">iphone 14</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_13_Pro_Mini"  name="phone_model"   class="radiobtnshowhide" id="iphone_13_Pro_Mini">
+              <label for="iphone_13_Pro_Mini">iphone 13 Pro Mini</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_12_Pro_Max"  name="phone_model"   class="radiobtnshowhide" id="iphone_12_Pro_Max">
+              <label for="iphone_12_Pro_Max">iphone 12 Pro Max</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_12_Mini"  name="phone_model"   class="radiobtnshowhide" id="iphone_12_Mini">
+              <label for="iphone_12_Mini">iphone 12 Mini</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_SE_(3rd_Gen)"  name="phone_model"   class="radiobtnshowhide" id="iphone_SE_(3rd_Gen)">
+              <label for="iphone_SE_(3rd_Gen)">iphone SE (3rd Gen)</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_SE_(2rd_Gen)"  name="phone_model"   class="radiobtnshowhide" id="iphone_SE_(2rd_Gen)">
+              <label for="iphone_SE_(2rd_Gen)">iphone SE (2rd Gen)</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_11_Pro_Max"  name="phone_model"   class="radiobtnshowhide" id="iphone_11_Pro_Max">
+              <label for="iphone_11_Pro_Max">iphone 11 Pro Max</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_11_Pro"  name="phone_model"   class="radiobtnshowhide" id="iphone_11_Pro">
+              <label for="iphone_11_Pro">iphone 11 Pro</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_11"  name="phone_model"   class="radiobtnshowhide" id="iphone_11">
+              <label for="iphone_11">iphone 11</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_XS_Max"  name="phone_model"   class="radiobtnshowhide" id="iphone_XS_Max">
+              <label for="iphone_XS_Max">iphone XS Max</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_XS"  name="phone_model"   class="radiobtnshowhide" id="iphone_XS">
+              <label for="iphone_XS">iphone XS</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_XR"  name="phone_model"   class="radiobtnshowhide" id="iphone_XR">
+              <label for="iphone_XR">iphone XR</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_X"  name="phone_model"   class="radiobtnshowhide" id="iphone_X">
+              <label for="iphone_X">iphone X</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_8_Plus"  name="phone_model"   class="radiobtnshowhide" id="iphone_8_Plus">
+              <label for="iphone_8_Plus">iphone 8 Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_8"  name="phone_model"   class="radiobtnshowhide" id="iphone_8">
+              <label for="iphone_8">iphone 8</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_7"  name="phone_model"   class="radiobtnshowhide" id="iphone_7">
+              <label for="iphone_7">iphone 7</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_7_Plus"  name="phone_model"   class="radiobtnshowhide" id="iphone_7_Plus">
+              <label for="iphone_7_Plus">iphone 7 Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_6s"  name="phone_model"   class="radiobtnshowhide" id="iphone_6s">
+              <label for="iphone_6s">iphone 6s</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_6s_Plus"  name="phone_model"   class="radiobtnshowhide" id="iphone_6s_Plus">
+              <label for="iphone_6s_Plus">iphone 6s Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_6"  name="phone_model"   class="radiobtnshowhide" id="iphone_6">
+              <label for="iphone_6">iphone 6</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_6_Plus"  name="phone_model"   class="radiobtnshowhide" id="iphone_6_Plus">
+              <label for="iphone_6_Plus">iphone 6 Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_SE"  name="phone_model"   class="radiobtnshowhide" id="iphone_SE">
+              <label for="iphone_SE">iphone SE</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_5s"  name="phone_model"   class="radiobtnshowhide" id="iphone_5s">
+              <label for="iphone_5s">iphone 5s</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_5e"  name="phone_model"   class="radiobtnshowhide" id="iphone_5e">
+              <label for="iphone_5e">iphone 5e</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_4s"  name="phone_model"   class="radiobtnshowhide" id="iphone_4s">
+              <label for="iphone_4s">iphone 4s</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_4"  name="phone_model"   class="radiobtnshowhide" id="iphone_4">
+              <label for="iphone_4">iphone 4</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_3GS"  name="phone_model"   class="radiobtnshowhide" id="iphone_3GS">
+              <label for="iphone_3GS">iphone 3GS</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_3G"  name="phone_model"   class="radiobtnshowhide" id="iphone_3G">
+              <label for="iphone_3G">iphone 3G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="iphone_Oringinal_2G"  name="phone_model"   class="radiobtnshowhide" id="iphone_Oringinal_2G">
+              <label for="iphone_Oringinal_2G">iphone Oringinal 2G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Other_device"  name="phone_model"   class="radiobtnshowhide" id="Other_device">
+              <label for="Other_device">Other device</label>
+            </div>
+          </div>
+        </div>
+        <!-- Select Samsung Model -->
+        <div class="samsung">
+          <p class="para">
+            What Samsung is it?<br>
+            <span>Select Your Phone Model?</span>
+          </p>
+          <div class="inputFields">
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Z_Flip4"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_Z_Flip4">
+              <label for="Samsung_Galaxy_Z_Flip4">Samsung Galaxy Z Flip4</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Z_Fold4"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_Z_Fold4">
+              <label for="Samsung_Galaxy_Z_Fold4">Samsung Galaxy Z Fold4</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S22_Ultra_5G"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_S22_Ultra_5G">
+              <label for="Samsung_Galaxy_S22_Ultra_5G">Samsung Galaxy S22 Ultra 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S22+_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S22+_5G">
+              <label for="Samsung_Galaxy_S22+_5G">Samsung Galaxy S22+ 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S22_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S22_5G">
+              <label for="Samsung_Galaxy_S22_5G">Samsung Galaxy S22 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Z_Flip3_5G"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_Z_Flip3_5G">
+              <label for="Samsung_Galaxy_Z_Flip3_5G">Samsung Galaxy Z Flip3 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Z_Fold3_5G"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_Z_Fold3_5G">
+              <label for="Samsung_Galaxy_Z_Fold3_5G">Samsung Galaxy Z Fold3 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S21_Ultra_5G"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_S21_Ultra_5G">
+              <label for="Samsung_Galaxy_S21_Ultra_5G">Samsung Galaxy S21 Ultra 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S21+_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S21+_5G">
+              <label for="Samsung_Galaxy_S21+_5G">Samsung Galaxy S21+ 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S21_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S21_5G">
+              <label for="Samsung_Galaxy_S21_5G">Samsung Galaxy S21 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S21_FE_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S21_FE_5G">
+              <label for="Samsung_Galaxy_S21_FE_5G">Samsung Galaxy S21 FE 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Note_20_Ultra_5G"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_Note_20_Ultra_5G">
+              <label for="Samsung_Galaxy_Note_20_Ultra_5G">Samsung Galaxy Note 20 Ultra 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Note_20_5G"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_Note_20_5G">
+              <label for="Samsung_Galaxy_Note_20_5G">Samsung Galaxy Note 20 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Z_Fold2_5G"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_Z_Fold2_5G">
+              <label for="Samsung_Galaxy_Z_Fold2_5G">Samsung Galaxy Z Fold2 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S20_Ultra"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S20_Ultra">
+              <label for="Samsung_Galaxy_S20_Ultra">Samsung Galaxy S20 Ultra</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S20+"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S20+">
+              <label for="Samsung_Galaxy_S20+">Samsung Galaxy S20+</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S20_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S20_5G">
+              <label for="Samsung_Galaxy_S20_5G">Samsung Galaxy S20 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S20"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S20">
+              <label for="Samsung_Galaxy_S20">Samsung Galaxy S20</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S20_FE_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S20_FE_5G">
+              <label for="Samsung_Galaxy_S20_FE_5G">Samsung Galaxy S20 FE 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Note_10_Plus_5G"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_Note_10_Plus_5G">
+              <label for="Samsung_Galaxy_Note_10_Plus_5G">Samsung Galaxy Note 10 Plus 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Note_10_Plus"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_Note_10_Plus">
+              <label for="Samsung_Galaxy_Note_10_Plus">Samsung Galaxy Note 10 Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Note_10"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_Note_10">
+              <label for="Samsung_Galaxy_Note_10">Samsung Galaxy Note 10</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Fold"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_Fold">
+              <label for="Samsung_Galaxy_Fold">Samsung Galaxy Fold</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Z_Flip"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_Z_Flip">
+              <label for="Samsung_Galaxy_Z_Flip">Samsung Galaxy Z Flip</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S10_Plus_Ceramic"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_S10_Plus_Ceramic">
+              <label for="Samsung_Galaxy_S10_Plus_Ceramic">Samsung Galaxy S10 Plus Ceramic</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S10_Plus"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S10_Plus">
+              <label for="Samsung_Galaxy_S10_Plus">Samsung Galaxy S10 Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S10"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S10">
+              <label for="Samsung_Galaxy_S10">Samsung Galaxy S10</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S10_Lite"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S10_Lite">
+              <label for="Samsung_Galaxy_S10_Lite">Samsung Galaxy S10 Lite</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S10e"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S10e">
+              <label for="Samsung_Galaxy_S10e">Samsung Galaxy S10e</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Note_9"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_Note_9">
+              <label for="Samsung_Galaxy_Note_9">Samsung Galaxy Note 9</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S9_Plus"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S9_Plus">
+              <label for="Samsung_Galaxy_S9_Plus">Samsung Galaxy S9 Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S9"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S9">
+              <label for="Samsung_Galaxy_S9">Samsung Galaxy S9</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Note_8"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_Note_8">
+              <label for="Samsung_Galaxy_Note_8">Samsung Galaxy Note 8</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S8_Plus"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S8_Plus">
+              <label for="Samsung_Galaxy_S8_Plus">Samsung Galaxy S8 Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S8"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S8">
+              <label for="Samsung_Galaxy_S8">Samsung Galaxy S8</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S7_Edge"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S7_Edge">
+              <label for="Samsung_Galaxy_S7_Edge">Samsung Galaxy S7 Edge</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S7"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S7">
+              <label for="Samsung_Galaxy_S7">Samsung Galaxy S7</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A23"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A23">
+              <label for="Samsung_Galaxy_A23">Samsung Galaxy A23</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A22_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A22_5G">
+              <label for="Samsung_Galaxy_A22_5G">Samsung Galaxy A22 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A21"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A21">
+              <label for="Samsung_Galaxy_A21">Samsung Galaxy A21</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A53_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A53_5G">
+              <label for="Samsung_Galaxy_A53_5G">Samsung Galaxy A53 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A71_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A71_5G">
+              <label for="Samsung_Galaxy_A71_5G">Samsung Galaxy A71 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A71"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A71">
+              <label for="Samsung_Galaxy_A71">Samsung Galaxy A71</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_J3"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_J3">
+              <label for="Samsung_Galaxy_J3">Samsung Galaxy J3</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A51_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A51_5G">
+              <label for="Samsung_Galaxy_A51_5G">Samsung Galaxy A51 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A51"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A51">
+              <label for="Samsung_Galaxy_A51">Samsung Galaxy A51</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_J7"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_J7">
+              <label for="Samsung_Galaxy_J7">Samsung Galaxy J7</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A8"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A8">
+              <label for="Samsung_Galaxy_A8">Samsung Galaxy A8</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A10"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A10">
+              <label for="Samsung_Galaxy_A10">Samsung Galaxy A10</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A52_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A52_5G">
+              <label for="Samsung_Galaxy_A52_5G">Samsung Galaxy A52 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A42_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A42_5G">
+              <label for="Samsung_Galaxy_A42_5G">Samsung Galaxy A42 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A32_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A32_5G">
+              <label for="Samsung_Galaxy_A32_5G">Samsung Galaxy A32 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A11"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A11">
+              <label for="Samsung_Galaxy_A11">Samsung Galaxy A11</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A13_5G"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A13_5G">
+              <label for="Samsung_Galaxy_A13_5G">Samsung Galaxy A13 5G</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A12"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A12">
+              <label for="Samsung_Galaxy_A12">Samsung Galaxy A12</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A70"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A70">
+              <label for="Samsung_Galaxy_A70">Samsung Galaxy A70</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A50"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A50">
+              <label for="Samsung_Galaxy_A50">Samsung Galaxy A50</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A20"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A20">
+              <label for="Samsung_Galaxy_A20">Samsung Galaxy A20</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A10e"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A10e">
+              <label for="Samsung_Galaxy_A10e">Samsung Galaxy A10e</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A5"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A5">
+              <label for="Samsung_Galaxy_A5">Samsung Galaxy A5</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A6"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A6">
+              <label for="Samsung_Galaxy_A6">Samsung Galaxy A6</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A03"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A03">
+              <label for="Samsung_Galaxy_A03">Samsung Galaxy A03</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A03s"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A03s">
+              <label for="Samsung_Galaxy_A03s">Samsung Galaxy A03s</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A02"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A02">
+              <label for="Samsung_Galaxy_A02">Samsung Galaxy A02</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_A01"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_A01">
+              <label for="Samsung_Galaxy_A01">Samsung Galaxy A01</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_J1"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_J1">
+              <label for="Samsung_Galaxy_J1">Samsung Galaxy J1</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Amp_Prime 2"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_Amp_Prime 2">
+              <label for="Samsung_Galaxy_Amp_Prime 2">Samsung Galaxy Amp Prime 2</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Note_4"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_Note_4">
+              <label for="Samsung_Galaxy_Note_4">Samsung Galaxy Note 4</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S6"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S6">
+              <label for="Samsung_Galaxy_S6">Samsung Galaxy S6</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S6_Edge"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S6_Edge">
+              <label for="Samsung_Galaxy_S6_Edge">Samsung Galaxy S6 Edge</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S5"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_S5">
+              <label for="Samsung_Galaxy_S5">Samsung Galaxy S5</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_Note_5"  name="phone_model"   class="radiobtnshowhide" id="Samsung_Galaxy_Note_5">
+              <label for="Samsung_Galaxy_Note_5">Samsung Galaxy Note 5</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Samsung_Galaxy_S6_Edge_Plus"  name="phone_model"   class="radiobtnshowhide"
+                id="Samsung_Galaxy_S6_Edge_Plus">
+              <label for="Samsung_Galaxy_S6_Edge_Plus">Samsung Galaxy S6 Edge Plus</label>
+            </div>
+        
+            <div class="inputCheckBox">
+              <input type="radio" value="Other_Samsung_Mobile_Device"  name="phone_model"   class="radiobtnshowhide"
+                id="Other_Samsung_Mobile_Device">
+              <label for="Other_Samsung_Mobile_Device">Other Samsung Mobile Device</label>
+            </div>
+          </div>
+        </div>
+        <!-- Other Devices -->
+        <div class="other_device">
+          <p class="para">
+            Please enter your device name along with model no?<br>
+            <span>Enter Your Phone Model?</span>
+          </p>
+          <div class="inputFields">
+            <input type="text" id="othermodels" placeholder="Enter Your Device Name & Model" name="phone_model">
+          </div>
+        </div>
+      </div>
+      <!-- Devices Issue -->
+      <div class="tab">
+        <p class="para">
+          Device Issue<br>
+          <span></span>
+        </p>
+        <div class="inputFields">
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Display_Broken" name="device-issue" id="Display_Broken">
+            <label for="Display_Broken">
+              <img src="icons_display broken.png" alt="">
+              <h4>Display Broken</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Battery_Damage" name="device-issue" id="Battery_Damage">
+            <label for="Battery_Damage">
+              <img src="icons_battery damage.png" alt="">
+              <h4>Battery Damage</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Water_Damage" name="device-issue" id="Water_Damage">
+            <label for="Water_Damage">
+              <img src="icons_water damage.png" alt="">
+              <h4>Water Damage</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Screen_Broken" name="device-issue" id="Screen_Broken">
+            <label for="Screen_Broken">
+              <img src="icons_screen broken.png" alt="">
+              <h4>Screen Broken</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Not_Charging" name="device-issue" id="Not_Charging">
+            <label for="Not_Charging">
+              <img src="icons_not charging.png" alt="">
+              <h4>Not Charging</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Short_Battery_Life" name="device-issue" id="Short_Battery_Life">
+            <label for="Short_Battery_Life">
+              <img src="icons_short battery life.png" alt="">
+              <h4>Short Battery Life</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Front_Camera_Does_not_work" name="device-issue"
+              id="Front_Camera_Does_not_work">
+            <label for="Front_Camera_Does_not_work">
+              <img src="icons_front camera doesnot work.png" alt="">
+              <h4>Front Camera Does not work</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Back_Camera_Does_not_work" name="device-issue" id="Back_Camera_Does_not_work">
+            <label for="Back_Camera_Does_not_work">
+              <img src="icons_back camera does not work.png" alt="">
+              <h4>Back Camera Does not work</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Can't_Hear_No_Audio" name="device-issue" id="Can't_Hear_No_Audio">
+            <label for="Can't_Hear_No_Audio">
+              <img src="icons_cant hear.png" alt="">
+              <h4>Can't Hear / No Audio</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Back_Housing_Cover" name="device-issue" id="Back_Housing_Cover">
+            <label for="Back_Housing_Cover">
+              <img src="icons_back housing.png" alt="">
+              <h4>Back Housing / Cover</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Power_Button" name="device-issue" id="Power_Button">
+            <label for="Power_Button">
+              <img src="icons_powe button.png" alt="">
+              <h4>Power Button</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="MicroPhone" name="device-issue" id="MicroPhone">
+            <label for="MicroPhone">
+              <img src="icons_microphone.png" alt="">
+              <h4>MicroPhone</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Head_Phone_Jack" name="device-issue" id="Head_Phone_Jack">
+            <label for="Head_Phone_Jack">
+              <img src="icons_headphone jack.png" alt="">
+              <h4>Head Phone Jack</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Ear_Speaker_No_Audio" name="device-issue" id="Ear_Speaker_No_Audio">
+            <label for="Ear_Speaker_No_Audio">
+              <img src="icons_ear speaker.png" alt="">
+              <h4>Ear Speaker / No Audio</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="Only_Glass_Break" name="device-issue" id="Only_Glass_Break">
+            <label for="Only_Glass_Break">
+              <img src="icons_only glass break.png" alt="">
+              <h4>Only Glass Break</h4>
+            </label>
+          </div>
+          <div class="inputCheckBox deviceIssue">
+            <input type="checkbox" value="I_Dont_Know_Other" name="device-issue" id="I_Dont_Know_Other">
+            <label for="I_Dont_Know_Other">
+              <img src="icons_i dont know.png" alt="">
+              <h4>I Dont Know / Other</h4>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Customer Contact Information -->
+      <div class="tab">
+        <p class="para">
+          Enter your Details Below<br>
+          <span></span>
+        </p>
+        <div class="inputFields">
+          <div class="flex mt-5">
+            <div class="box">
+              <input type="text" placeholder="First Name" name="firstname">
+            </div>
+            <div class="box">
+              <input type="text" placeholder="Last Name" name="lastname">
+            </div>
+          </div>
+          <div class="flex">
+            <div class="box">
+              <input type="text" placeholder="Please Enter a valid Phone Number" name="phone">
+            </div>
+            <div class="box">
+              <input type="email" placeholder="Enter your Email"  name="email">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Appointment Information -->
+      <div class="tab">
+        <p class="para">
+          Appointment<br>
+          <span>Select your Appointment Date & Time</span>
+        </p>
+        <div class="inputFields">
+          <input class="min-today" id="min" type="datetime-local"  name="appointment" placeholder="YYYY-MM-DD" data-date-split-input="true" />
+        </div>
+      </div>
+      <!-- Store Locations -->
+      <div class="tab">
+        <p class="para">
+          Select Location?<br>
+          <span></span>
+        </p>
+        <div class="inputFields">
+          <div class="location">
+            <input type="radio" value="wefixpt@gmail.com" name="store-location" id="store-1">
+            <label for="store-1">
+              <img src="store-1.png" alt="">
+              <h6>We Fix Palos Park</h6>
+              <p class="address">13018 s LaGrange Rd. Palos Park IL 60464</p>
+              <p class="email">wefixpt@gmail.com</p>
+              <p class="number">+1 (708) 608-8993</p>
+            </label>
+          </div>
+          <div class="location">
+            <input type="radio" value="Wefixpt3@gmail.com" name="store-location" id="store-2">
+            <label for="store-2">
+              <img src="store-2.png" alt="">
+              <h6>We Fix Valpo</h6>
+              <p class="address">2410 Laporte Ave Suite 120 Valparaiso IN 46383</p>
+              <p class="email">Wefixpt3@gmail.com</p>
+              <p class="number">+1 (219) 286-7374</p>
+            </label>
+          </div>
+          <div class="location">
+            <input type="radio" value="Wefixpt1@gmail.com" name="store-location" id="store-3">
+            <label for="store-3">
+              <img src="store-3.png" alt="">
+              <h6>We Fix Darien</h6>
+              <p class="address">6818 S. Kingrey Hwy, Darien IL 60456</p>
+              <p class="email">Wefixpt1@gmail.com</p>
+              <p class="number">+1 (630) 568-3476</p>
+            </label>
+          </div>
+          <div class="location">
+            <input type="radio" value="Wefixcp@gmail.com" name="store-location" id="store-4">
+            <label for="store-4">
+              <img src="store-4.png" alt="">
+              <h6>We Fix Crown Point</h6>
+              <p class="address">10649 Broadway, Crown Point, IN 46410</p>
+              <p class="email">Wefixcp@gmail.com</p>
+              <p class="number">+1 (219) 213-2806</p>
+            </label>
+          </div>
+          <div class="location">
+            <input type="radio" value="Wefixburbank@gmail.com" name="store-location" id="store-5">
+            <label for="store-5">
+              <img src="store-5.png" alt="">
+              <h6>We Fix Marionette Park</h6>
+              <p class="address">3321 W 115th St Chicago IL 60803</p>
+              <p class="email">Wefixburbank@gmail.com</p>
+              <p class="number">+1 (708) 979-9978</p>
+            </label>
+          </div>
+          <div class="location">
+            <input type="radio" value="Wefixpt6@gmail.com" name="store-location" id="store-6">
+            <label for="store-6">
+              <img src="store-6.png" alt="">
+              <h6>We Fix Frankfort</h6>
+              <p class="address">31 Bankview Drive Frankfort IL 60423</p>
+              <p class="email">Wefixpt6@gmail.com</p>
+              <p class="number">+1 (815) 534-5832</p>
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="thankyou">
+      <div class="row">
+        <p><img src="email.png" alt=""></p>
+        <h1> Your Application Has Been Submitted!</h1>
+     </div>
+    </div>
+
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+
+    <div style="overflow:auto;" class="nextprev">
+      <div style="float:right;">
+        <button type="button" id="prevBtn">Previous</button>
+        <button type="button" id="nextBtn">Next</button>
+      </div>
+    </div>
+
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

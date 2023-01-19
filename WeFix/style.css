@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    width: 57%;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+}
+
+.tab-section {
+    padding: 30px 50px 0px 50px;
+}
+
+.para {
+    text-align: center;
+    font-size: 24px;
+    color: #222222;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="datetime-local"],
+select {
+    width: 100%;
+    padding: 18px;
+    margin: 15px 0;
+    font-size: 17px;
+    border-radius: 4px;
+    border: 2px solid #e3e3e3;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="datetime-local"]:focus,
+input[type="number"]:focus {
+    border: 2px solid #b4b4b4;
+    outline: none;
+}
+
+.mt-5 {
+    margin-top: 15px !important;
+}
+
+.available {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.available .avail {
+    width: 100%;
+    border: 2px solid #b4b4b4;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.available .avail input[type="radio"] {
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.available .avail label {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.available .avail label .img-box {
+    width: 100%;
+    height: 12rem;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: .9;
+}
+
+.available .avail label .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.available .avail label .con {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.available .avail label .con h3 {
+    font-size: 18px;
+    color: #222222;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.available .avail label .con p {
+    font-size: 15px;
+    color: #222222;
+    font-weight: 500;
+}
+
+.para span {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.inputFields {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.inputFields .flex {
+    margin-top: -20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inputFields .flex .box{
+    width: 100%;
+}
+
+.location {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    flex: 1 1 15rem;
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+    position: relative;
+}
+
+.location input[type="radio"] {
+    position: absolute;
+    content: '';
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.location label {
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.location label img {
+    width: 100%;
+    height: 70px;
+    object-fit: contain;
+    /* margin-left: -18px; */
+}
+
+.location label h6 {
+    font-size: 18px;
+    color: #222222;
+    font-weight: 500;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.location label p {
+    font-size: 15px;
+    color: #222222;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.inputCheckBox {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    flex: 1 1 15rem;
+    border: 2px solid #e3e3e3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.inputCheckBox label {
+    width: 100%;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #222222;
+}
+
+.inputCheckBox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.deviceIssue {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    flex: 1 1 20rem;
+    border: 2px solid #e3e3e3;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.deviceIssue input[type="checkbox"] {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.deviceIssue label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.deviceIssue label img {
+    width: 70px;
+    height: 70px;
+}
+
+.deviceIssue label h4 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #222222;
+}
+
+
+input.invalid,
+select.invalid {
+    background-color: #ffdddd;
+}
+
+.tab {
+    display: none;
+}
+
+.nextprev {
+    background: #000;
+    padding: 12px 18px;
+}
+
+.nextprev div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+button {
+    background-color: transparent;
+    color: #ffffff;
+    /* border: 10px double #222222; */
+    border: none;
+    /* border-radius: 10px; */
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.error {
+    color: red;
+    font-weight: 500;
+}
+
+.tab {
+    position: relative;
+}
+
+#phone_model-error {
+    position: absolute;
+    bottom: -35px;
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+}
+
+#device-issue-error {
+    position: absolute;
+    bottom: -850px;
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+}
+
+#store-location-error{
+    position: absolute;
+    bottom: -295px;
+    font-size: 16px;
+    font-weight: 500;
+    color: red;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+    display: none;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #04AA6D;
+}
+.thankyou{
+    display: none;
+}
+.thankyou h1{
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+}
+.thankyou img{
+    width: 280px;
+}
+.thankyou p{
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    #store-location-error {
+        bottom: -1265px;
+    }
+}
+@media (max-width: 450px) {
+
+    .tab-section {
+        padding: 20px 30px 0px 30px;
+    }
+
+    .para {
+        font-size: 18px;
+    }
+
+    .para span {
+        font-size: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="datetime-local"],
+    select {
+        padding: 13px;
+        margin: 5px 0;
+    }
+
+    .nextprev {
+        padding: 5px 10px;
+    }
+
+    .available {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .inputFields .flex {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    #device-issue-error {
+        bottom: -1795px;
+    }
+
+    #store-location-error {
+        bottom: -1335px;
+    }
+
+}
